@@ -2,6 +2,11 @@ import React, { useState } from 'react'
 import { Github, ExternalLink, Eye, Star } from 'lucide-react'
 import VikrantImage from '../images/Vikrant.jpg'
 import WeatherlyImage from '../images/Weatherly.jpg'
+import Agomoni_AI from '../images/Agomoni_AI.jpg'
+import SmartSpendImage from '../images/SmartSpend.jpg'
+import TravelWallahImage from '../images/Travel_Wallah.jpg'
+import BlogSphereImage from '../images/BlogSphere.jpg'
+
 
 const Projects = () => {
   const [hoveredProject, setHoveredProject] = useState(null)
@@ -132,7 +137,7 @@ const Projects = () => {
         technologies: ['React', 'Socket.io', 'Express', 'PostgreSQL', 'Google Maps API', 'AI Route Optimization'],
         github: 'https://github.com/Subhadip-codes/Agomoni.AI.git',
         live: 'https://agomoni-ai.vercel.app',
-        image: '/images/projects/agomoni-ai.jpg',
+        image: Agomoni_AI,
         category: 'Web App',
         status: 'In-Progress',
         
@@ -204,7 +209,7 @@ const Projects = () => {
         technologies: ['React', 'Tailwind CSS', 'Node.js', 'Express', 'EJS', 'PostgreSQL'],
         github: 'https://github.com/Subhadip-codes/Blog-Application.git',
         live: 'https://blogsphere-demo.vercel.app',
-        image: '/images/projects/blogsphere.jpg',
+        image: BlogSphereImage,
         category: 'Frontend',
         status: 'Completed',
         
@@ -227,7 +232,7 @@ const Projects = () => {
         technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Chart.js', 'Socket.io'],
         github: 'https://github.com/Subhadip-codes/smartspend-tracker',
         live: 'https://smartspend-demo.vercel.app',
-        image: '/images/projects/smartspend.jpg',
+        image: SmartSpendImage,
         category: 'Frontend',
         status: 'In-Progress',
         
@@ -327,7 +332,7 @@ const Projects = () => {
         technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Payment Gateway', 'Travel APIs'],
         github: 'https://github.com/Subhadip-codes/Travel-Wallah.git',
         live: 'https://travel-wallah.vercel.app',
-        image: '/images/projects/travel-wallah.jpg',
+        image: TravelWallahImage,
         category: 'Full Stack',
         status: 'In-Progress',
         
