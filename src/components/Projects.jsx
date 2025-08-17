@@ -1,13 +1,21 @@
 import React, { useState } from 'react'
 import { Github, ExternalLink, Eye, Star } from 'lucide-react'
-import VikrantImage from '../images/Vikrant.jpg'
-import WeatherlyImage from '../images/Weatherly.jpg'
-import Agomoni_AI from '../images/Agomoni_AI.jpg'
-import SmartSpendImage from '../images/SmartSpend.jpg'
-import TravelWallahImage from '../images/Travel_Wallah.jpg'
-import BlogSphereImage from '../images/BlogSphere.jpg'
 
+// Replace these imports with direct paths to public folder
+// import VikrantImage from '../images/Vikrant.jpg'
+// import WeatherlyImage from '../images/Weatherly.jpg'
+// import Agomoni_AI from '../images/Agomoni_AI.jpg'
+// import SmartSpendImage from '../images/SmartSpend.jpg'
+// import TravelWallahImage from '../images/Travel_Wallah.jpg'
+// import BlogSphereImage from '../images/BlogSphere.jpg'
 
+// Use direct paths instead
+const VikrantImage = '/images/Vikrant.jpg'
+const WeatherlyImage = '/images/Weatherly.jpg'
+const Agomoni_AI = '/images/Agomoni_AI.jpg'
+const SmartSpendImage = '/images/SmartSpend.jpg'
+const TravelWallahImage = '/images/Travel_Wallah.jpg'
+const BlogSphereImage = '/images/BlogSphere.jpg'
 const Projects = () => {
   const [hoveredProject, setHoveredProject] = useState(null)
   
