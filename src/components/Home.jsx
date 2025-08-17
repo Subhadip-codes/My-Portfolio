@@ -1,6 +1,17 @@
 import React from 'react'
+import { Download } from 'lucide-react'
 
 const Home = ({ scrollToSection }) => {
+  const handleDownloadCV = () => {
+    // Replace 'cv.pdf' with the actual path to your CV file
+    const link = document.createElement('a')
+    link.href = '/Subhadip_Layek_CV.pdf' // Make sure to place your CV file in the public folder
+    link.download = 'Subhadip_Layek_CV.pdf'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center px-4 pt-16">
       <div className="max-w-6xl mx-auto w-full">
@@ -71,6 +82,15 @@ const Home = ({ scrollToSection }) => {
                 >
                   View My Work
                 </button>
+                
+                <button 
+                  onClick={handleDownloadCV}
+                  className="px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25 flex items-center justify-center gap-2"
+                >
+                  <Download size={18} />
+                  Download CV
+                </button>
+                
                 <button 
                   onClick={() => scrollToSection('contact')}
                   className="px-8 py-4 border-2 border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
